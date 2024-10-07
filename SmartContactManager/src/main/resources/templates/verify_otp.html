@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+    th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8" />
+    <title>Verify OTP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #login {
+            margin-top: 50px;
+        }
+
+        #login-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #login-form {
+            margin-top: 20px;
+        }
+
+        #login-form .form-control {
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="login">
+            <div class="container">
+                <div id="login-row" class="row justify-content-center align-items-center">
+                    <div id="login-column" class="col-md-6">
+                        <div id="login-box" class="col-md-12">
+                            <div class="alert alert-success" role="alert">
+                                We have successfully sent OTP to your email
+                            </div>
+                             <div th:if="${session.message}" class="container"> 
+              <div class="alert alert-danger" role="alert">
+                  <span  th:text="${session.message}"></span>
+              </div>
+       <th:block th:text="${@sessionHelper.removeMessageFromSession()}"></th:block> 
+         </div>
+                            <form id="login-form" class="form" th:action="@{/verify-otp}" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="otp" id="otp" class="form-control" placeholder="Enter OTP here" required>
+                                </div>
+                                <div class="form-group text-center">
+                                    <input type="submit" name="submit" class="btn btn-outline-success" value="Verify">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

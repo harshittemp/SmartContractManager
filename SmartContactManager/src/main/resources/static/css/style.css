@@ -1,0 +1,493 @@
+body {
+
+background: #e2e2e2 !important;
+
+}
+
+
+
+
+.bg-primary {
+
+background: #009688 !important;
+
+}
+
+
+
+
+.banner {
+
+width: 100%;
+
+height: 93vh;
+
+background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../image/banner.jpg);
+
+background-size: cover;
+
+color: white;
+
+}
+
+
+
+
+.my-card {
+
+padding: 20px;
+
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+background: #fff;
+
+border-radius: 8px;
+
+}
+
+
+
+
+.form-group {
+
+margin-bottom: 1.5rem; /* Increase spacing between form fields */
+
+}
+
+.z
+
+{
+
+color:#009688;
+
+ 
+
+}
+
+
+
+
+/* New or Updated CSS for Login Page */
+
+#login {
+
+margin-top: 50px;
+
+}
+
+
+
+
+#login-box {
+
+padding: 30px;
+
+border: 1px solid #ddd;
+
+border-radius: 8px;
+
+background-color: #fff;
+
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+animation: slideIn 0.5s ease-in;
+
+}
+
+
+
+
+h3.text-center.text-info {
+
+color: #009688;
+
+margin-bottom: 20px; /* Ensure space below the heading */
+
+}
+
+
+
+
+.text-info {
+
+color: #009688;
+
+}
+
+
+
+
+.btn-info {
+
+background-color: #009688;
+
+border-color: #009688;
+
+transition: background-color 0.3s, border-color 0.3s;
+
+}
+
+
+
+
+.btn-info:hover {
+
+background-color: #00796b;
+
+border-color: #00796b;
+
+}
+
+
+
+
+.alert {
+
+border-radius: 5px;
+
+margin-bottom: 20px;
+
+}
+
+
+
+
+#register-link a {
+
+color: #009688;
+
+}
+
+
+
+
+#register-link a:hover {
+
+color: #00796b;
+
+}
+
+
+
+
+.container.text-center.mt-3 a {
+
+color: #009688;
+
+}
+
+
+
+
+.container.text-center.mt-3 a:hover {
+
+color: #00796b;
+
+}
+
+
+
+
+@keyframes fadeIn {
+
+from { opacity: 0; }
+
+to { opacity: 1; }
+
+}
+
+
+
+
+@keyframes slideIn {
+
+from { transform: translateY(-20px); opacity: 0; }
+
+to { transform: translateY(0); opacity: 1; }
+
+}
+
+
+
+
+/* New CSS for Form Alignment */
+
+#login-form {
+
+display: flex;
+
+flex-direction: column;
+
+}
+
+
+
+
+.form-group {
+
+margin-bottom: 1rem; /* Adjust spacing between form fields */
+
+}
+
+
+
+
+.form-group label {
+
+margin-bottom: 0.5rem; /* Space between label and input */
+
+}
+
+
+
+
+.form-group input {
+
+width: 100%; /* Make inputs take full width */
+
+padding: 0.75rem; /* Add padding inside inputs */
+
+}
+
+
+
+
+#remember-me {
+
+margin-right: 0.5rem; /* Space between checkbox and text */
+
+}
+
+
+
+
+#register-link {
+
+margin-top: 1rem; /* Space above the register link */
+
+}
+
+
+
+
+/* Sidebar */
+
+@media only screen and (max-width:600px) {
+
+.sidebar {
+        display: none;
+        width: 80% !important;
+        background: white;
+        height: 100vh;
+        position: fixed;
+        padding-top: 20px;
+        z-index: 9999;
+    }
+
+    .content {
+        margin-left: 0 !important;
+    }
+
+    .card {
+        margin: 0 10px;
+    }
+
+    .table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .btn {
+     max-width: 200px;
+        width: 100%;
+        margin-bottom: 10px;
+    
+    }
+   
+    .btn-center {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Adjust spacing as needed */
+    }
+    
+    
+
+
+}
+
+
+
+
+
+
+
+.sidebar
+
+{
+
+ 
+
+width:18%;
+
+background-color:white;
+
+height:100%;
+
+position:fixed;
+
+padding-top:45px;
+
+z-index:9999999999999999999999999999999999999999999999;
+
+}
+
+.content
+
+{
+
+ 
+
+margin-left: 20%;
+
+}
+
+
+
+
+.sidebar a{
+
+display:block;
+
+width:100%;
+
+padding:10px 20px;
+
+text-decoration:none;
+
+color:grey;
+
+ 
+
+ 
+
+}
+
+
+
+
+.sidebar a:hover{
+
+background:#e2e2e2;
+
+ 
+
+ 
+
+}
+
+.sidebar .divider
+
+{
+
+ 
+
+ 
+
+height:.5px;
+
+width:100%;
+
+background:#e2e2e2;
+
+margin-top:10px;
+
+}
+
+.sidebar .cross-btn
+
+{
+
+ 
+
+position:absolute;
+
+top:0;
+
+right:35px;
+
+font-size:36px;
+
+cursor:pointer;
+
+ 
+
+}
+
+
+
+
+.my_profile_picture
+
+{
+
+width:35px;
+
+height:35px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:0.5px solid black;
+
+ 
+
+ 
+
+}
+
+/* search result*/
+
+
+.search-container
+{
+	
+	position:relative;
+	
+	
+}
+
+.search-result
+{
+	
+	position:absolute;
+	
+	background:white;
+	
+	width:100%;
+	
+	padding:10px;
+	border:1px solid grey;
+	display:none;
+	
+}
+
+
+.active
+{
+	
+	background:#009688 !important;
+	color:white !important;
+}
+
+
+
+
+
+
+
+
+
+

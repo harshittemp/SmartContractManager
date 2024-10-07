@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>this is home page</title>
+</head>
+<body>
+	<section>
+		
+		<div class="container">
+		
+		<div class="card">
+		<div class="card-body my-5">
+		
+		
+		 <div class="container text-center "><img class="my_profile_picture" style="height:200px;width:200px" th:src="@{/image/contact_logo.png}" alt="Profilephoto"></img></div>
+		<h1 class="text-center mt-3 text-secondary font-weight-light">Start Adding Your Contact On Cloud</h1>
+		<div class="btn-center"><a th:href="@{/user/add-contact}" class="btn btn-primary mt-4 btn-block">ADD NEW CONTACT</a></div>
+		
+		<h3 class=" mt-3 text-secondary">Donate Us</h3>
+		<input type="text" id="paymentfield" class="form-control  mt-2" placeholder="Enter amount here">
+		<div class="container text-center">
+	      <button onclick="paymentStart()"  class="btn btn-info mt-4 btn-block color" style="color:white">CHECKOUT</button>
+		</div>
+	
+		
+		</div>
+		
+		</div>
+		</div>
+		<script>
+		$(document).ready(()=>{ 
+			$('.item').removeClass('active');
+			 $('#home-link').addClass('active');
+		});
+          		
+		</script>
+	</section>
+</body>
+</html>
